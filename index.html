@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Track Tally</title>
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#2563eb" />
+
+      <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem("theme");
+        var systemDark = window.matchMedia &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+        var theme = (stored && stored !== "system")
+          ? stored
+          : "light";
+
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (e) {
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+  <meta name="color-scheme" content="light dark">
+
+    <script type="module" crossorigin src="/assets/index-DnbMKvZx.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CR-kHY4N.css">
+  <link rel="manifest" href="/manifest.webmanifest"></head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
